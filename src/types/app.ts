@@ -57,3 +57,29 @@ export type Order = {
   status: 'PENDING' | 'COMPLETED' | 'CANCELLED';
   timestamp?: Date;
 };
+
+export type CartStorageMap = {
+  [productId: string]: number; // quantity
+};
+
+export type NormalizedProduct = {
+  [productId: string]: Product;
+};
+
+export type CartItem = {
+  id: string;
+  quantity: number;
+  product: Product;
+};
+
+export type CartContextType = {
+  items: CartItem[];
+  addItem: (product: Product, quantity?: number) => void;
+  removeItem: (productId: string) => void;
+  updateQuantity: (productId: string, quantity: number) => void;
+  clearCart: (suppressToast?: boolean) => void;
+  totalItems: number;
+  subtotal: number;
+  total: Price;
+  isLoading: boolean;
+};

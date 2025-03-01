@@ -41,7 +41,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <PriceFormatter price={product.price} />
         </p>
       </CardContent>
-      <CardFooter className="flex gap-2 p-4 pt-0">
+      <CardFooter className="flex gap-2 p-4 pt-0 flex-wrap">
         <Button
           variant="default"
           size="sm"

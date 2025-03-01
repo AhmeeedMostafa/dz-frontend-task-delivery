@@ -4,6 +4,22 @@ The thought process mainly goes around keeping the exact architecture provided i
 
 ## Architecture Decisions
 
+### run application
+
+```bash
+yarn && yarn dev
+# or
+npm install && npm run dev
+```
+
+### run tests
+
+```bash
+yarn test
+# or
+npm run test
+```
+
 ### State Management
 
 - **React Context API**: Used for managing the shopping cart state across the application, allowing any component to access and modify the cart contents.

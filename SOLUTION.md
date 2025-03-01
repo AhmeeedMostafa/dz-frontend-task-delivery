@@ -20,6 +20,8 @@ yarn test
 npm run test
 ```
 
+Tests are applied only for 2 pages (products & categories).
+
 ### State Management
 
 - **React Context API**: Used for managing the shopping cart state across the application, allowing any component to access and modify the cart contents.
